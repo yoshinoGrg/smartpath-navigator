@@ -7,12 +7,12 @@ body {
 
 .container {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 30px;
 }
 
 .controls {
@@ -21,10 +21,10 @@ h1 {
 
 select,
 button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 10px;
-    border-radius: 10px;
     border: none;
+    border-radius: 10px;
     font-size: 1rem;
 }
 
@@ -32,19 +32,38 @@ button {
     background: #2563eb;
     color: white;
     cursor: pointer;
+    transition: background 0.2s;
 }
 
 button:hover {
     background: #1d4ed8;
 }
 
+/* Reset button distinct style */
+button:last-of-type {
+    background: #dc2626;
+}
+
+button:last-of-type:hover {
+    background: #b91c1c;
+}
+
 canvas {
+    display: block;
+    margin: auto;
     background: #111827;
-    border: 2px solid #334155;
+    border: 3px solid #475569;
     border-radius: 15px;
+    cursor: crosshair;
 }
 
 #result {
     margin-top: 20px;
     font-size: 1.2rem;
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #64748b;
 }

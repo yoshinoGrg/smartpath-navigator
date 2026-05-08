@@ -7,43 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-
         <h1>SmartPath Navigator</h1>
-
         <div class="controls">
-
-            <select id="startNode">
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-            </select>
-
-            <select id="endNode">
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-            </select>
-
-            <button onclick="findPath()">
-                Find Path
-            </button>
-
+            <select id="startNode"></select>
+            <select id="endNode"></select>
+            <button onclick="findPath()">Find Path</button>
+            <button onclick="resetGraph()">Reset</button>
         </div>
-
-        <canvas id="graphCanvas"
-            width="900"
-            height="500">
-        </canvas>
-
+        <canvas id="graphCanvas" width="1000" height="500"></canvas>
         <div id="result"></div>
-
+        <p class="hint">Click canvas to add nodes · Click two nodes to connect them with a weight</p>
     </div>
-
     <script src="script.js"></script>
-
 </body>
 </html>
