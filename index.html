@@ -9,31 +9,41 @@
 <body>
 
     <div class="container">
+
         <h1>SmartPath Navigator</h1>
 
         <div class="controls">
+
             <select id="startNode">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
             </select>
 
             <select id="endNode">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
             </select>
 
             <button onclick="findPath()">
-                Find Shortest Path
+                Find Path
             </button>
+
         </div>
 
+        <canvas id="graphCanvas"
+            width="900"
+            height="500">
+        </canvas>
+
         <div id="result"></div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
