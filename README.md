@@ -51,3 +51,7 @@ Example:
 
 ```js
 A: { B: 5, C: 2 }
+
+## Demo
+
+![SmartPath Navigator](assets/demo.png)
